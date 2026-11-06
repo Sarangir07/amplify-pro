@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Amplify Gen 2 generated / local artifacts
+.amplify/
+amplify_outputs*
+amplifyconfiguration*
+
+# Environment & secrets (real secrets live in AWS Secrets Manager, never in git)
+.env
+.env.*
+!.env.example
+
+# Logs & OS / editor files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/

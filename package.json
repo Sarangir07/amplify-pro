@@ -1,0 +1,26 @@
+{
+  "name": "amplify-project",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck:amplify": "tsc --noEmit -p amplify/tsconfig.json",
+    "sandbox": "ampx sandbox",
+    "sandbox:delete": "ampx sandbox delete"
+  },
+  "devDependencies": {
+    "@aws-amplify/backend": "^1.25.1",
+    "@aws-amplify/backend-cli": "^1.10.0",
+    "aws-cdk-lib": "^2.275.0",
+    "constructs": "^10.8.1",
+    "esbuild": "^0.25.12",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
